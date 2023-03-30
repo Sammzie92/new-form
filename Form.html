@@ -1,36 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>XL</title>
     <link rel="icon" href="favicon/favicon.ico" type="image/icon" >
     <link rel="stylesheet" href="styling.css" type="text/css">
+	<script src="torunscripts.js"></script>
     </head>
 <body>
 
+<div class="preview">
+	<button class="quote" >Get a Quote</button>
+</div>
 	<header>
 		<h1>XL Rental Services</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Services</a></li>
+				<li class="has-dropdown">
+					<a href="#">Services</a>
+				<ul class="dropdown">
+					<li> Car Rentals</li>
+					<li> Car Leasing</li>
+					<li> Chauffeur Services </li>
+					<li> Airport Transfers</li>
+				</ul>
+				</li>
 				<li><a href="#">Pricing</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
 		</nav>
-	</header>
+		</header>
+			<div class="cars"></div>
+		<div>
+			<div class="all-slides">
+			<div class="slider">
+				<div class="slides">
+				<!-- buttons as seen on YT-->
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<!-- buttons end here-->
+				<!--images begin here-->
+				<div class="slide first">
+					<img src="images/CX.jpg" alt="CX">
+				</div>
+				<div class="slide">
+					<img src="images/CW.jpg" alt="CW">
+				</div>
+				<div class="slide">
+					<img src="images/DL.jpg" alt="DL">
+				</div>
+				<div class="slide">
+					<img src="images/DL-k.jpg" alt="DL-k">
+				</div>
+				<div class="slide">
+					<img src="images/DG.jpg" alt="DG">
+				</div>
+				<!-- images end here -->
+				<!-- auto navigatin-->
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+				</div>
+				<!-- auto navigation ends-->
+			</div>
+			<!-- manual navigation start-->
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>
+			<!-- manual navigation end -->
+			</div>
+			</div>
+		</div>
+		<!--End of slides -->
+<script type="text/javascript">
+	var counter = 1;
+	setInterval(function (){
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+		if(counter>4){
+			counter=1;
+		}
+	}, 5000)
+</script>
 
+
+
+<div class="slideshow">
+
+</div>
     	<main>
-
-		<section id="services">
-			<h2>Our Services</h2>
-			<ul>
-				<li>Car Rental</li>
-				<li>Car Leasing</li>
-				<li>Chauffeur Services</li>
-				<li>Airport Transfers</li>
-			</ul>
-		</section>
 
 		<section id="pricing">
 			<h2>Pricing</h2>
@@ -51,8 +118,19 @@
         </main>
 
 <footer>
-    <p>XL Rental Services.</p>
-    <p>&copy; Sammzie Prod. All rights reserved.</p>
+	<section>
+    	<ul class="social-media">
+		<li class="twitter"><a href="#"><img src="Icons/twitter.svg" alt="Twitter"></a> </li>
+		<li class="facebook"><a href="#"><img src="Icons/facebook.svg" alt="Facebook"></a> </li>
+		<li class="instagram"><a href="#"><img src="Icons/instagram.svg" alt="Instagram"></a> </li>
+		<li class="github"><a href="#"><img src="Icons/github.svg" alt="Github"></a> </li>
+		<li class="email"><a href="#"><img src="Icons/envelope-circle-check-solid.svg" alt="Email"></a> </li>
+	</ul>
+	</section>
+
+	<div class="rights">
+	<p>XL Rental Services. &copy; Sammzie Prod. All rights reserved.</p>
+	</div>
 </footer>
 
 </body>
