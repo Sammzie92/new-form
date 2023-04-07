@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-US</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/icon" >
+    <link rel="stylesheet" href="bout-us.css" type="text/css">
+	<link rel="stylesheet" href="styling.css" type="text/css">
+	<link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
+</head>
+<body>
+<!--heading sections starts-->
+<div class="preview">
+	<button class="quote" >Get a Quote</button>
+</div>
+<section id="about-heading">
+	<div class="about"></div>
+        	<div class="about-header">
+		<a href="index.html" class="logo">XL</a>
+		<h1>XL Rental Services</h1>
+		<div class="navigation">
+			<ul class="menu">
+				<li class="menu-item"><a href="#">Home</a></li>
+				<li class="menu-item">
+					<a class="sub-btn" href="#">Services<i class="fa-sharp fa-solid fa-angle-down"></i></a>
+				<ul class="sub-menu">
+					<li class="sub-item"><a href="#">Car Rentals</a> </li>
+					<li class="sub-item"><a href="#">Car Leasing</a> </li>
+					<li class="sub-item"><a href="#">Chauffeur Services</a> </li>
+					<li class="sub-item"><a href="#">Airport Transfers</a> </li>
+					<li class="sub-item"><a href="#">Self Drive</a> </li>
+				</ul>
+				</li>
+				<li class="menu-item"><a href="#">Pricing</a></li>
+				<li class="menu-item">
+					<a class="sub-btn" href="#">Guides<i class="fa-sharp fa-solid fa-angle-down"></i></a>
+					<ul class="sub-menu">
+						<li class="sub-item"><a href="#">33 Seaters</a> </li>
+						<li class="sub-item"><a href="#">Comfort Luxury</a> </li>
+						<li class="sub-item"><a href="#">Game Drives</a> </li>
+						<li class="sub-item"><a href="#">Mini-Suv</a> </li>
+						<li class="sub-item more">
+							<a class="more-btn" href="#">Events<i class="fa-solid fa-angle-right"></i></a>
+							<ul class="more-menu">
+								<li class="sub-more"><a href="#">Weddings</a> </li>
+								<li class="sub-more"><a href="#">Burials</a> </li>
+								<li class="sub-more"><a href="#">Family Gatherings</a> </li>
+
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="about-us.html">About Us</a></li>
+				<li class="menu-item"><a href="index.html#contact-us">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+</section>
+<!--heading section ends-->
+
+<!-- Slider main container -->
+<div class="container">
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="images/about/motion.jpg" alt="img"></div>
+    <div class="swiper-slide"><img src="images/about/33seater.jpg" alt="img"></div>
+    <div class="swiper-slide"><img src="images/about/ruracio.jpg" alt="img"></div>
+    <div class="swiper-slide"><img src="images/about/jiji.jpg" alt="img"></div>
+    <div class="swiper-slide"><img src="images/about/parked.jpg" alt="img"></div>
+
+  </div>
+   <!-- If we need navigation buttons -->
+    <div class="navigation-btn">
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+    </div>
+
+      <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+    </div>
+
+
+
+<script src="node_modules/swiper/swiper-bundle.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+      clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+
+</body>
+</html>

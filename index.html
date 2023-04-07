@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XL Sample Page</title>
+    <link rel="icon" href="favicon/xl-website-favicon-black.png" type="image/icon" >
+    <link rel="stylesheet" href="styling.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="running.js"></script>
+	<link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+	<script type="text/javascript" src="header.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		ScrollReveal({ duration: 1000 })
+		ScrollReveal({reset: true});
+	</script>
+    </head>
+<body>
+<!--Quote button-->
+<div class="preview">
+	<button class="quote" >Get a Quote</button>
+</div>
+<!--Quote button ends-->
+
+	<header>
+		<!--Headings start-->
+		<a href="index.html" class="logo"><img src="Logo/xl-high-resolution-logo-black-on-transparent-background%20(3).png" alt="logo" width="90" height="100"></a>
+		<input type="checkbox" id="menu-bar">
+		<label for="menu-bar">Menu</label>
+		<nav class="navigation-bar">
+			<ul>
+				<li><a href="#">Home</a> </li>
+				<li><a href="#">Our Services <i class="fa-solid fa-square-plus"></i></a>
+					<ul>
+						<li><a href="#">Airport Transfers</a> </li>
+						<li><a href="#">Self Drive</a> </li>
+						<li><a href="#">Vip & Events</a> </li>
+						<li><a href="#">Chauffer Driven</a> </li>
+					</ul>
+				</li>
+				<li><a href="#">For Business</a> </li>
+				<li><a href="#">Guides<i class="fa-solid fa-square-plus"></i></a>
+					<ul>
+						<li><a href="#">Comfort Luxury</a> </li>
+						<li><a href="#">Tour Guides</a> </li>
+						<li><a href="#">Long Distance Drives</a> </li>
+						<li><a href="#">SUV</a> </li>
+					</ul>
+				</li>
+				<li><a href="#">About Us</a> </li>
+				<li><a href="#contact-us">Contact Us</a> </li>
+			</ul>
+		</nav>
+
+
+	</header>
+<!--Headings end-->
+			<div class="cars">
+				<img src="Icons/commute_black_24dp.svg" alt="commute">
+				<div class="call-us">
+
+
+				</div>
+			</div>
+<!--image slides begin here-->
+<div class="container">
+		<div class="swiper">
+
+  		<div class="swiper-wrapper">
+    <!-- Slides -->
+    	<div class="swiper-slide">
+			<div class="slide-together">
+				<img src="images/interior.jpg" alt="car-seats">
+				<div class="slider-text">
+					<h2>Comfort Rides</h2>
+					<p>This image showcases our stylish and comfortable car interiors, perfect for long drives.</p>
+			</div>
+				</div>
+		</div>
+	  	<div class="swiper-slide"><img src="images/Redit.jpg" alt="car-seats">
+		<div class="slider-text">
+			<h2> Modern Drives</h2>
+			<p> Step out for the long drives with our modern Self-Drives vehicles</p>
+		</div>
+		</div>
+	  	<div class="swiper-slide"><img src="images/Newly-facelifted-Toyota-Noah-1.8G-Hybrid-1.jpg" alt="car-seats">
+		<div class="slider-text">
+			<h2>Chauffer Driven</h2>
+			<p> Some text here to describe the picture</p>
+		</div>
+		</div>
+	  	<div class="swiper-slide"><img src="images/fh.jpg" alt="car-seats">
+		<div class="slider-text">
+			<h2>Ultra Modern</h2>
+			<p>Some text here for picture description</p>
+		</div>
+		</div>
+
+
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev" ></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+<!--End of slides -->
+
+
+<div class="slideshow">
+
+</div>
+	</div>
+    	<main>
+<!--Pricing section--
+		<section id="pricing">
+			<h2>Pricing</h2>
+			<p>Please contact us for pricing information.</p>
+			<div class="pricing-section">
+  <form>
+    <label for="pickup-location">Pick-up Location:</label>
+    <input type="text" id="pickup-location" name="pickup-location">
+
+    <label for="dropoff-location">Drop-off Location:</label>
+    <input type="text" id="dropoff-location" name="dropoff-location">
+
+    <label for="car-type">Car Type:</label>
+    <select id="car-type" name="car-type">
+      <option value="standard">Standard</option>
+      <option value="luxury">Luxury</option>
+      <option value="suv">SUV</option>
+    </select>
+
+    <label for="num-days">Number of Days:</label>
+    <input type="number" id="num-days" name="num-days">
+
+    <label for="event-type">Event/Service Type:</label>
+    <input type="radio" id="event-type-wedding" name="event-type" value="wedding">
+    <label for="event-type-wedding">Wedding</label>
+    <input type="radio" id="event-type-airport" name="event-type" value="airport">
+    <label for="event-type-airport">Airport</label>
+
+    <label for="date-picker">Pick a date:</label>
+    <input type="text" id="date-picker" name="date-picker">
+
+    <button type="button" id="calculate-btn">Calculate Price</button>
+  </form>
+
+  <div class="price-estimate"></div>
+</div>
+
+		</section>
+--Pricing section ends-->
+<!--About us section-->
+	<section id="about">
+		<div class="about-section">
+			<h2>Nice to Meet You!</h2>
+			<div class="grid-container">
+				<div class="grid-item">
+					<h3>Our Mission</h3>
+					<p>At XL, we provide quality vehicles and exceptional customer service.</p>
+				</div>
+				<div class="grid-item">
+					<h3> Our Values</h3>
+					<p>Some text containing values here.</p>
+				</div>
+				<div class="grid-item">
+					<h3> Our Team</h3>
+					<p> Some text showing the impecable team</p>
+				</div>
+				<div class="grid-item">
+					<h3> 24/7 Support</h3>
+					<p> Some text infomation showing CS Support</p>
+			</div>
+
+			</div>
+
+		</div>
+		<script>
+			ScrollReveal().reveal('.about-section h2', {
+				delay:200,
+				duration: 1000,
+				distance: '50px',
+				origin: 'bottom-right',
+				opacity:0,
+				easing: 'ease-in-out'
+			});
+			ScrollReveal().reveal('.grid-container', {delay: 800,});
+			ScrollReveal().reveal('.grid-item:nth-child(2)', {delay: 1000})
+			ScrollReveal().reveal('.grid-item:nth-child(3)', {delay: 1200})
+			ScrollReveal().reveal('.grid-item:nth-child(4)', {delay: 1400})
+			ScrollReveal().reveal('.grid-item:nth-child(1)', {delay: 900})
+		</script>
+	</section>
+
+<!--About us ends--
+
+<!-contact section starts here-->
+
+	<section id="contact-us">
+		<div class="contact-section">
+			<div class="contact-info">
+				<div><i class="fa-solid fa-location-dot"></i>Fig Tree, Ngara, Nairobi</div>
+				<div><i class="fa-solid fa-envelope-circle-check">YOUR@EMAIL.COM</i></div>
+				<div><i class="fa-solid fa-phone-volume"></i>+2547333000</div>
+				<div><i class="fa-solid fa-clock"></i>Mon - Sat 7:00AM - 6:00PM</div>
+
+			</div>
+			<div class="contact-form">
+				<h2>Contact Us</h2>
+				<form class="contact" action="" method="post">
+					<input type="text" name="name" class="text-box" placeholder="Your Name" required>
+					<input type="email" name="email" class="text-box" placeholder="Your E-mail" required>
+					<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+					<input type="submit" name="submit" class="send-btn" value="Send">
+				</form>
+			</div>
+<!--alert messages here-->
+		<!--<div class="alert-success">
+			<span>Message Sent! Thank you for contacting us.</span>
+		</div>-->
+			<!--<div class="alert-error">
+				<span>Something went wrong! Please try again.</span>
+			</div>-->
+<!--alert messages end-->
+
+		</div>
+
+
+       </section>
+			<div class="back-to-top">
+				<a id="back-to-top"><i class="fa-solid fa-circle-up"></i></a>
+				<script type="text/javascript" src="jquery.backtotop.js"></script>
+			</div>
+<!-- contact section ends here-->
+
+
+        </main>
+
+<footer>
+	<section>
+    	<ul class="social-media">
+		<li class="twitter"><a href="#"><img src="color%20icons/icons8-twitter.svg" alt="Twitter"></a> </li>
+		<li class="facebook"><a href="#"><img src="color%20icons/icons8-facebook.svg" alt="Facebook"></a> </li>
+		<li class="instagram"><a href="#"><img src="color%20icons/icons8-instagram-48.png" alt="Instagram"></a> </li>
+		<li class="github"><a href="#"><img src="color%20icons/icons8-github.svg" alt="Github"></a> </li>
+		<li class="email"><a href="#"><img src="color%20icons/icons8-gmail-logo.svg" alt="Email"></a> </li>
+	</ul>
+	</section>
+
+	<div class="rights">
+	<p>XL Rental Services. &copy; Sammzie Prod. All rights reserved.</p>
+	</div>
+</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper('.swiper', {
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+	  clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+</body>
+</html>
